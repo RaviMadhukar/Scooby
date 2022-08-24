@@ -4,9 +4,9 @@ cross= true;
 audioElement = new Audio('song/music.mp3');
 audiogo = new Audio('song/gameover.mp3');
 
-setTimeout(()=>{
+
     audioElement.play();
-}, 1000);
+
 
 document.onkeydown= function(e){
     console.log("Key code is :" ,e.keyCode);

@@ -23,6 +23,11 @@ body{
     bottom: 0;
 }
 
+.sweetCat img{
+    width:200px;
+    height:190px;
+}
+
 .angryCat{
     max-width: 280px;
     background-size: cover;
@@ -30,6 +35,11 @@ body{
     position: absolute;
     bottom: 0;
     left: 85%;
+}
+
+.angryCat img{
+    width:200px;
+    height:190px;
 }
 
 .gameOver{
@@ -80,4 +90,48 @@ body{
         left: -15vw;
     }
 }
+
+@media screen and (max-width:680px),
+       screen and (max-height:320px){
+          
+        .sweetCat img{
+            width: 100px;
+            height: 90px;
+        }
+
+        .angryCat img{
+            width: 100px;
+            height: 90px;
+        }
+
+        .gameOver{
+            font-size: 30px;
+        }
+        #scoreCount{
+            font-size: 15px;
+            margin-top: -50px;
+        }
+        
+        @keyframes cat{
+            0%{
+                 bottom: 0;
+            }
+            50%{ 
+                 bottom: 150px;
+            }
+            100%{
+                 bottom: 0;
+            }
+        }
+        
+        @keyframes bunny{
+            0%{
+                left: 100vw;
+            }
+            100%{
+                left: -15vw;
+            }
+        }
+
+       }
 
