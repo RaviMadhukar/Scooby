@@ -2,7 +2,7 @@ score =0;
 cross= true;
 
 audioElement = new Audio('song/music.mp3');
-audiogo = new Audio('song/gameover.mp3');
+// audiogo = new Audio('song/gameover.mp3');
 
 
     audioElement.play();
@@ -21,13 +21,13 @@ document.onkeydown= function(e){
     if(e.keyCode==39){
         sweetCat = document.querySelector('.sweetCat');
         CatX = parseInt(window.getComputedStyle(sweetCat, null).getPropertyValue('left'));
-        sweetCat.style.left = CatX + 110 + "px";
+        sweetCat.style.left = CatX + 100 + "px";
     }
 
     if(e.keyCode==37){
         sweetCat = document.querySelector('.sweetCat');
         CatX = parseInt(window.getComputedStyle(sweetCat, null).getPropertyValue('left'));
-        sweetCat.style.left = (CatX - 110) + "px";
+        sweetCat.style.left = (CatX - 100) + "px";
     }
 }
 
