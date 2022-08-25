@@ -76,7 +76,7 @@ button {
 }
 
 @media screen and (max-width:680px),
-screen and (max-height:320px) {
+screen and (max-height:260px) {
 
     .main{
         background-size: 100vw 100vh;
