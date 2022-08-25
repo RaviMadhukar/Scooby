@@ -35,7 +35,7 @@ document.onkeydown= function(e){
     }
 }
 
-
+ 
 
 setInterval(()=>{
     sweetCat = document.querySelector('.sweetCat');
