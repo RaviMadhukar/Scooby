@@ -1,6 +1,10 @@
 score =0;
 cross= true;
 
+let up= document.getElementById('up');
+let left= document.getElementById('left');
+let right= document.getElementById('right');
+
 audioElement = new Audio('song/music.mp3');
 // audiogo = new Audio('song/gameover.mp3');
 
@@ -30,6 +34,8 @@ document.onkeydown= function(e){
         sweetCat.style.left = (CatX - 100) + "px";
     }
 }
+
+
 
 setInterval(()=>{
     sweetCat = document.querySelector('.sweetCat');

@@ -15,6 +15,10 @@ body {
     height: 100vh;
 }
 
+.control i{
+    display: none;
+}
+
 .sweetCat {
     max-width: 280px;
     background-size: cover;
@@ -116,12 +120,35 @@ screen and (max-height:260px) {
 
     .gameOver {
         font-size: 40px;
-        margin-top: -10px;
+        margin-top: -20px;
     }
 
     #scoreCount {
+        border: 3px solid white;
         font-size: 15px;
-        margin-top: -50px;
+        margin-top: -80px;
+        margin-left: 5px;
+    }
+
+    .control i{
+        display: flex;
+        color:transparent white;
+        font-size: 40px;
+        margin-top: 80px;
+    }
+    
+    #upp{
+        margin-left: 40px;
+    }
+    
+    #leftt{
+        margin-top: -35px;
+        margin-left: 400px;
+    }
+    
+    #rightt{
+        margin-top: -40px;
+        margin-left: 490px;
     }
 
     @keyframes cat {
