@@ -35,7 +35,30 @@ document.onkeydown= function(e){
     }
 }
 
- 
+ function controler(e){
+    console.log("hello",e);
+    if(e==38){
+        sweetCat = document.querySelector('.sweetCat');
+        sweetCat.classList.add('animatesweetCat');
+        setTimeout(()=>{
+            sweetCat.classList.remove('animatesweetCat');
+        },700);
+    }
+
+    if(e==39){
+        sweetCat = document.querySelector('.sweetCat');
+        CatX = parseInt(window.getComputedStyle(sweetCat, null).getPropertyValue('left'));
+        sweetCat.style.left = CatX + 100 + "px";
+    }
+
+    if(e==37){
+        sweetCat = document.querySelector('.sweetCat');
+        CatX = parseInt(window.getComputedStyle(sweetCat, null).getPropertyValue('left'));
+        sweetCat.style.left = (CatX - 100) + "px";
+    }
+    
+
+ }
 
 setInterval(()=>{
     sweetCat = document.querySelector('.sweetCat');
