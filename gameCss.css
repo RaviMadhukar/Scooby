@@ -98,8 +98,8 @@ body {
     }
 }
 
-@media screen and (max-width:680px),
-screen and (max-height:260px) {
+@media screen and (max-width:720px),
+screen and (max-height:360px) {
 
     .gameContainer {
         background-size: 100vw 100vh;
@@ -132,6 +132,7 @@ screen and (max-height:260px) {
 
     .control i{
         display: flex;
+        position: absolute;
         color:transparent white;
         font-size: 40px;
         margin-top: 80px;
@@ -143,13 +144,11 @@ screen and (max-height:260px) {
     }
     
     #leftt{
-        margin-top: -40px;
-        margin-left: 480px;
+        right: 20%;
     }
     
     #rightt{
-        margin-top: -42px;
-        margin-left: 560px;
+        right: 10%;
     }
 
     @keyframes cat {
