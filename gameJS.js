@@ -6,7 +6,7 @@ let left= document.getElementById('left');
 let right= document.getElementById('right');
 
 audioElement = new Audio('song/music.mp3');
-// audiogo = new Audio('song/gameover.mp3');
+audiogo = new Audio('song/gameover.mp3');
 
 
     audioElement.play();
